@@ -1,0 +1,11 @@
+analyzer:
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
+  errors:
+    invalid_annotation_target: ignore
+    constant_identifier_names: ignore
+
+
+
+
