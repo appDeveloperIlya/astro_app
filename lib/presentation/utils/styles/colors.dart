@@ -3,48 +3,55 @@ import 'package:flutter/material.dart';
 class AppColors {
   AppColors._();
 
-  /// brand color
-  static const blue_violet = Color.fromRGBO(138, 43, 226, 1);
-  static const brand_color_gradient = LinearGradient(
+  static const text_primary = Color.fromRGBO(11, 13, 85, 1);
+  static const tab_bar_bg = Color.fromRGBO(36, 42, 56, 0.9);
+
+  // black
+  static const black_a = Color.fromRGBO(36, 42, 56, 0.7);
+  static const black_b = Color.fromRGBO(46, 51, 81, 1);
+  static const black_c = Color.fromRGBO(36, 42, 56, 0.6);
+
+  // white
+  static const white_a = Color.fromRGBO(255, 255, 255, 1);
+  static const white_b = Color.fromRGBO(243, 237, 255, 1);
+  static const white_c = Color.fromRGBO(255, 255, 255, 0.3);
+
+  //violet
+  static const violet_bg = Color.fromRGBO(134, 128, 203, 1);
+  static const violet = Color.fromRGBO(85, 87, 182, 1);
+  static const deepViolet = Color.fromRGBO(61, 64, 154, 1);
+
+  // other
+  static const bluescreen = Color.fromRGBO(98, 255, 246, 1);
+  static const peach = Color.fromRGBO(249, 181, 190, 1);
+  static const mint = Color.fromRGBO(121, 212, 207, 1);
+  static const tab_bar_off = Color.fromRGBO(98, 112, 146, 1);
+
+  // gradient
+  static const moon = LinearGradient(
     begin: Alignment.bottomLeft,
     end: Alignment.topRight,
     colors: [
-      Color.fromRGBO(138, 43, 226, 1),
-      Color.fromRGBO(190, 98, 233, 1),
+      Color.fromRGBO(238, 253, 255, 1),
+      Color.fromRGBO(151, 188, 197, 1),
     ],
   );
 
-  static const brand_color_gradient2 = LinearGradient(
-    stops: [
-      0.05,
-      0.15,
-      0.4,
-    ],
+  static const astro = LinearGradient(
     begin: Alignment.bottomLeft,
-    end: Alignment(0.1, -3),
+    end: Alignment.topRight,
     colors: [
-      Color.fromRGBO(153, 124, 238, 1),
-      Color.fromRGBO(181, 109, 232, 1),
-      Color.fromRGBO(196, 100, 227, 1),
+      Color.fromRGBO(133, 144, 255, 1),
+      Color.fromRGBO(143, 255, 249, 1),
     ],
   );
 
-  /// text
-  static const text_primary = Color.fromRGBO(18, 18, 18, 1);
-  static const text_secondary = Color.fromRGBO(60, 60, 67, 0.6);
-  static const text_oncolor_primary = Color.fromRGBO(255, 255, 255, 1);
-  static const text_oncolor_secondary = Color.fromRGBO(255, 255, 255, 0.6);
-  static const text_highlight = Color.fromRGBO(150, 56, 227, 0.1);
-
-  /// text field
-  static const tf_label_default = Color.fromRGBO(60, 60, 67, 0.6);
-  static const tf_label_focus = Color.fromRGBO(150, 56, 227, 1);
-  static const tf_label_disabled = Color.fromRGBO(60, 60, 67, 0.2);
-  static const tf_label_error = Color.fromRGBO(254, 65, 100, 1);
-  static const tf_mask = Color.fromRGBO(60, 60, 67, 0.3);
-  static const tf_input_text_filled = Color.fromRGBO(18, 18, 18, 1);
-  static const tf_input_text_disabled = Color.fromRGBO(60, 60, 67, 0.2);
-  static const tf_indicator_default = Color.fromRGBO(60, 60, 67, 0.3);
-  static const tf_indicator_focus = Color.fromRGBO(150, 56, 227, 1);
-  static const tf_indicator_error = Color.fromRGBO(254, 65, 100, 1);
+  static const main_bg = LinearGradient(
+    colors: [
+      Color.fromRGBO(134, 128, 203, 1),
+      Color.fromRGBO(134, 128, 203, 1),
+      Color.fromRGBO(134, 128, 203, 0.9),
+      Color.fromRGBO(139, 193, 205, 1),
+    ],
+  );
 }

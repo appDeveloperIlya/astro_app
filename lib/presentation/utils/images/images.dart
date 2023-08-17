@@ -6,7 +6,12 @@ class AppImages {
   AppImages._();
 
   // bottom_navigation_bar
-  static const ic_home_unselected = 'ic_home_unselected.svg';
+  static const ic_bottom_nav_bar_calendar = 'ic_bottom_nav_bar_calendar.svg';
+  static const ic_bottom_nav_bar_affirmation = 'ic_bottom_nav_bar_affirmation.svg';
+  static const ic_bottom_nav_bar_asceticism = 'ic_bottom_nav_bar_asceticism.svg';
+
+  static const img_bg_first = 'img_bg_first.webp';
+  static const img_indicator = 'img_indicator.webp';
 
   // _ERRORS ---------------------------------------------------------------- |
   static const _ASSET_IMAGE_ERROR = 'asset image not found in path';

@@ -7,13 +7,18 @@ class CalendarScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetBuilder<CalendarController>(
-      init: CalendarController(),
+      init: CalendarController(Get.find()),
       builder: (ctr) {
-        return Scaffold(
-          body: SafeArea(
-            child: Center(
-              child: Text('Calendar'),
-            ),
+        return LayoutWrapper(
+          isLoading: ctr.isLoading.value,
+          child: Column(
+            children: [
+              Text('home_calendar'.tr),
+              OutlinedButton(
+                onPressed: ctr.getCalendar,
+                child: Text(ctr.calendarValue.value),
+              ),
+            ],
           ),
         );
       },

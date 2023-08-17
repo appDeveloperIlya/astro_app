@@ -1,3 +1,4 @@
+import 'package:astro_app/dependencies.dart';
 import 'package:flutter/material.dart';
 import 'package:astro_app/presentation/_export.dart';
 
@@ -23,6 +24,7 @@ class MyApp extends StatelessWidget {
       ),
       getPages: Routes.getRouterPages(),
       initialRoute: Routes.splash,
+      initialBinding: AppBindings(),
     );
   }
 }

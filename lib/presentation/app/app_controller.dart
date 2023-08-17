@@ -9,9 +9,4 @@ class AppController extends GetxController {
     tabIndex.value = index;
     update();
   }
-
-  @override
-  void onInit() async {
-    super.onInit();
-  }
 }

@@ -9,10 +9,23 @@ class AffirmationScreen extends StatelessWidget {
     return GetBuilder<AffirmationController>(
       init: AffirmationController(),
       builder: (ctr) {
-        return Scaffold(
-          body: SafeArea(
-            child: Center(
-              child: Text('affirmation'),
+        return LayoutImgWrapper(
+          hasProgress: true,
+          isLoading: ctr.isLoading.value,
+          backgroundImage: AppImages.getAssetImage(
+            AppImages.img_bg_first,
+            fit: BoxFit.cover,
+          ),
+          child: Center(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Text('home_affirmation'.tr),
+                OutlinedButton(
+                  onPressed: ctr.changeLoading,
+                  child: Text('click'),
+                ),
+              ],
             ),
           ),
         );

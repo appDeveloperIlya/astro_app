@@ -15,6 +15,7 @@ class AppDimens {
   static const icon_18 = 18.0;
   static const icon_19 = 19.0;
   static const icon_20 = 20.0;
+  static const icon_22 = 22.0;
   static const icon_24 = 24.0;
   static const icon_28 = 28.0;
   static const icon_29 = 29.0;
@@ -46,4 +47,8 @@ class AppDimens {
   static const icon_282 = 282.0;
   static const icon_324 = 324.0;
   static const icon_440 = 440.0;
+
+  // bottom navigation bar items
+  static const bottom_nav_bar_letters = 12.0;
+  static const bottom_nav_bar_6 = 6.0;
 }

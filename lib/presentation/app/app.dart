@@ -35,41 +35,44 @@ class _AppBottomNavigationBar extends BottomNavigationBar {
     required this.tabIndex,
     super.onTap,
   }) : super(
+          selectedFontSize: AppDimens.bottom_nav_bar_letters,
+          unselectedFontSize: AppDimens.bottom_nav_bar_letters,
+          iconSize: AppDimens.icon_22,
           currentIndex: tabIndex,
           type: BottomNavigationBarType.fixed,
-          backgroundColor: Color.fromRGBO(36, 54, 101, 1.0),
-          unselectedItemColor: Colors.white.withOpacity(0.5),
-          selectedItemColor: Colors.white,
+          backgroundColor: AppColors.tab_bar_bg,
+          unselectedItemColor: AppColors.tab_bar_off,
+          selectedItemColor: AppColors.mint,
           items: [
             BottomNavigationBarItem(
               icon: Container(
-                margin: EdgeInsets.only(bottom: 7),
-                child: Icon(
-                  Icons.home,
-                  size: 20.0,
+                margin: EdgeInsets.only(
+                  top: AppDimens.bottom_nav_bar_6,
+                  bottom: AppDimens.bottom_nav_bar_6,
                 ),
+                child: AppImages.getAssetVectorImage(AppImages.ic_bottom_nav_bar_calendar),
               ),
               label: 'home_calendar'.tr,
               backgroundColor: Color.fromRGBO(36, 54, 101, 1.0),
             ),
             BottomNavigationBarItem(
               icon: Container(
-                margin: EdgeInsets.only(bottom: 7),
-                child: Icon(
-                  Icons.search,
-                  size: 20.0,
+                margin: EdgeInsets.only(
+                  top: AppDimens.bottom_nav_bar_6,
+                  bottom: AppDimens.bottom_nav_bar_6,
                 ),
+                child: AppImages.getAssetVectorImage(AppImages.ic_bottom_nav_bar_affirmation),
               ),
               label: 'home_affirmation'.tr,
               backgroundColor: Color.fromRGBO(36, 54, 101, 1.0),
             ),
             BottomNavigationBarItem(
               icon: Container(
-                margin: EdgeInsets.only(bottom: 7),
-                child: Icon(
-                  Icons.location_history,
-                  size: 20.0,
+                margin: EdgeInsets.only(
+                  top: AppDimens.bottom_nav_bar_6,
+                  bottom: AppDimens.bottom_nav_bar_6,
                 ),
+                child: AppImages.getAssetVectorImage(AppImages.ic_bottom_nav_bar_asceticism),
               ),
               label: 'home_asceticism'.tr,
               backgroundColor: Color.fromRGBO(36, 54, 101, 1.0),

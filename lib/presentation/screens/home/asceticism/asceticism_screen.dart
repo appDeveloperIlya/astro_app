@@ -9,11 +9,9 @@ class AsceticismScreen extends StatelessWidget {
     return GetBuilder<AsceticismController>(
       init: AsceticismController(),
       builder: (ctr) {
-        return Scaffold(
-          body: SafeArea(
-            child: Center(
-              child: Text('asceticism'),
-            ),
+        return LayoutWrapper(
+          child: Center(
+            child: Text('home_asceticism'.tr),
           ),
         );
       },

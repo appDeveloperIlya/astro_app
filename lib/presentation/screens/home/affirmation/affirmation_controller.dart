@@ -1,13 +1,14 @@
 import 'package:astro_app/presentation/_export.dart';
 
-class AffirmationController extends GetxController {
+class AffirmationController extends GetxProgressController {
   AffirmationController();
 
-  final tabIndex = 0.obs;
+  void changeLoading() async {
+    setLoading(true);
 
-  void changeTabIndex(int index) async {
-    tabIndex.value = index;
-    update();
+    await Future<void>.delayed(const Duration(seconds: 1));
+
+    setLoading(false);
   }
 
   @override
