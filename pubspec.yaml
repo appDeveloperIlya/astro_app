@@ -18,6 +18,9 @@ dependencies:
   #SVG
   flutter_svg: 2.0.7
 
+  #Calendar
+  table_calendar: 3.0.9
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

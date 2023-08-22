@@ -9,6 +9,9 @@ class AppImages {
   static const ic_bottom_nav_bar_calendar = 'ic_bottom_nav_bar_calendar.svg';
   static const ic_bottom_nav_bar_affirmation = 'ic_bottom_nav_bar_affirmation.svg';
   static const ic_bottom_nav_bar_asceticism = 'ic_bottom_nav_bar_asceticism.svg';
+  static const ic_bottom_nav_bar_calendar_filled = 'ic_bottom_nav_bar_calendar_filled.svg';
+  static const ic_bottom_nav_bar_affirmation_filled = 'ic_bottom_nav_bar_affirmation_filled.svg';
+  static const ic_bottom_nav_bar_asceticism_filled = 'ic_bottom_nav_bar_asceticism_filled.svg';
 
   static const img_bg_first = 'img_bg_first.webp';
   static const img_indicator = 'img_indicator.webp';

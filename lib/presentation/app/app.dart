@@ -11,11 +11,11 @@ class App extends StatelessWidget {
       builder: (ctr) {
         return Scaffold(
           bottomNavigationBar: _AppBottomNavigationBar(
-            tabIndex: ctr.tabIndex.value,
+            tabIndex: ctr.selectedTab.value.selectedIndex,
             onTap: ctr.changeTabIndex,
           ),
           body: IndexedStack(
-            index: ctr.tabIndex.value,
+            index: ctr.selectedTab.value.selectedIndex,
             children: [
               CalendarScreen(),
               AffirmationScreen(),
@@ -44,39 +44,33 @@ class _AppBottomNavigationBar extends BottomNavigationBar {
           unselectedItemColor: AppColors.tab_bar_off,
           selectedItemColor: AppColors.mint,
           items: [
-            BottomNavigationBarItem(
-              icon: Container(
-                margin: EdgeInsets.only(
-                  top: AppDimens.bottom_nav_bar_6,
-                  bottom: AppDimens.bottom_nav_bar_6,
-                ),
-                child: AppImages.getAssetVectorImage(AppImages.ic_bottom_nav_bar_calendar),
-              ),
-              label: 'home_calendar'.tr,
-              backgroundColor: Color.fromRGBO(36, 54, 101, 1.0),
-            ),
-            BottomNavigationBarItem(
-              icon: Container(
-                margin: EdgeInsets.only(
-                  top: AppDimens.bottom_nav_bar_6,
-                  bottom: AppDimens.bottom_nav_bar_6,
-                ),
-                child: AppImages.getAssetVectorImage(AppImages.ic_bottom_nav_bar_affirmation),
-              ),
-              label: 'home_affirmation'.tr,
-              backgroundColor: Color.fromRGBO(36, 54, 101, 1.0),
-            ),
-            BottomNavigationBarItem(
-              icon: Container(
-                margin: EdgeInsets.only(
-                  top: AppDimens.bottom_nav_bar_6,
-                  bottom: AppDimens.bottom_nav_bar_6,
-                ),
-                child: AppImages.getAssetVectorImage(AppImages.ic_bottom_nav_bar_asceticism),
-              ),
-              label: 'home_asceticism'.tr,
-              backgroundColor: Color.fromRGBO(36, 54, 101, 1.0),
-            ),
+            _AppBottomNavBarItem(type: BottomNavBarItemType.CALENDAR),
+            _AppBottomNavBarItem(type: BottomNavBarItemType.AFFIRMATION),
+            _AppBottomNavBarItem(type: BottomNavBarItemType.ASCETICISM),
           ],
+        );
+}
+
+class _AppBottomNavBarItem extends BottomNavigationBarItem {
+  final BottomNavBarItemType type;
+
+  _AppBottomNavBarItem({
+    required this.type,
+  }) : super(
+          icon: Container(
+            margin: EdgeInsets.only(
+              top: AppDimens.bottom_nav_bar_6,
+              bottom: AppDimens.bottom_nav_bar_6,
+            ),
+            child: AppImages.getAssetVectorImage(type.unselectedIconRes),
+          ),
+          activeIcon: Container(
+            margin: EdgeInsets.only(
+              top: AppDimens.bottom_nav_bar_6,
+              bottom: AppDimens.bottom_nav_bar_6,
+            ),
+            child: AppImages.getAssetVectorImage(type.selectedIconRes),
+          ),
+          label: type.label,
         );
 }
