@@ -22,6 +22,7 @@ class AppDimens {
   static const icon_30 = 30.0;
   static const icon_31 = 31.0;
   static const icon_32 = 32.0;
+  static const icon_36 = 36.0;
   static const icon_40 = 40.0;
   static const icon_42 = 42.0;
   static const icon_44 = 44.0;
@@ -47,8 +48,26 @@ class AppDimens {
   static const icon_282 = 282.0;
   static const icon_324 = 324.0;
   static const icon_440 = 440.0;
+  static const icon_800 = 800.0;
 
   // bottom navigation bar items
   static const bottom_nav_bar_letters = 12.0;
   static const bottom_nav_bar_6 = 6.0;
+
+  // border radius
+  static const border_radius_20 = 20.0;
+
+  //app margin
+  static const margin_0 = 0.0;
+  static const margin_3 = 3.0;
+  static const margin_2 = 2.0;
+  static const margin_4 = 4.0;
+  static const margin_8 = 8.0;
+  static const margin_10 = 10.0;
+  static const margin_12 = 12.0;
+  static const margin_13 = 13.0;
+  static const margin_14 = 14.0;
+  static const margin_16 = 16.0;
+  static const margin_19 = 19.0;
+  static const margin_45 = 45.0;
 }

@@ -3,8 +3,10 @@ import 'package:flutter/material.dart';
 class AppColors {
   AppColors._();
 
-  static const text_primary = Color.fromRGBO(11, 13, 85, 1);
+  static const text_primary = Color.fromRGBO(243, 237, 255, 1);
   static const tab_bar_bg = Color.fromRGBO(36, 42, 56, 0.9);
+  static const for_body_text = Color.fromRGBO(11, 13, 85, 1);
+  static const half_moon = Color.fromRGBO(74, 74, 103, 1);
 
   // black
   static const black_a = Color.fromRGBO(36, 42, 56, 0.7);
@@ -26,6 +28,7 @@ class AppColors {
   static const peach = Color.fromRGBO(249, 181, 190, 1);
   static const mint = Color.fromRGBO(121, 212, 207, 1);
   static const tab_bar_off = Color.fromRGBO(98, 112, 146, 1);
+  static const asceticism_card = Color.fromRGBO(36, 42, 56, 0.7);
 
   // gradient
   static const moon = LinearGradient(

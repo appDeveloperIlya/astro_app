@@ -1,33 +1,12 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:astro_app/presentation/_export.dart';
 
 class AppFonts {
   AppFonts._();
 
-  ///region font family
-  static String? _platformFontFamilyText;
-  static String? _platformFontFamilyDisplay;
-
-  static FontWeight? _platformSemiboldOrMedium;
-
-  static String get platformFontFamilyText {
-    _platformFontFamilyText ??= Platform.isIOS ? 'SFProText' : 'Roboto';
-    return _platformFontFamilyText!;
-  }
-
-  static String get platformFontFamilyDisplay {
-    _platformFontFamilyDisplay ??= Platform.isIOS ? 'SFProDisplay' : 'Roboto';
-    return _platformFontFamilyDisplay!;
-  }
-
-  static FontWeight get platformSemiboldOrMedium {
-    _platformSemiboldOrMedium ??= Platform.isIOS ? FontWeight.w600 : FontWeight.w500;
-    return _platformSemiboldOrMedium!;
-  }
-
-  static const roboto = 'Roboto';
+  static const inter = 'Inter';
+  static const sf_compact_display = 'SFComactDisplay';
+  static const sf_pro_display = 'SFProDisplay';
 
   ///endregion
 }
@@ -40,17 +19,22 @@ class AppTextStyles {
   static const size_12 = 12.0;
   static const size_13 = 13.0;
   static const size_14 = 14.0;
+  static const size_15 = 15.0;
   static const size_16 = 16.0;
   static const size_17 = 17.0;
   static const size_18 = 18.0;
   static const size_20 = 20.0;
   static const size_22 = 22.0;
+  static const size_23 = 23.0;
   static const size_24 = 24.0;
   static const size_25 = 25.0;
   static const size_26 = 26.0;
+  static const size_27 = 27.0;
   static const size_28 = 28.0;
   static const size_30 = 30.0;
   static const size_32 = 32.0;
+  static const size_33 = 33.0;
+  static const size_34 = 34.0;
   static const size_36 = 36.0;
   static const size_40 = 40.0;
 
@@ -68,63 +52,146 @@ class AppTextStyles {
   static const letter_spacing_05 = -0.5;
 
   static TextStyle h1({
-    Color color = AppColors.text_primary,
+    Color color = AppColors.white_a,
   }) =>
       TextStyle(
-        fontFamily: AppFonts.platformFontFamilyDisplay,
-        letterSpacing: letter_spacing_0_positive,
-        height: size_36 / size_28,
-        fontSize: size_28,
-        fontWeight: AppFonts.platformSemiboldOrMedium,
+        fontFamily: AppFonts.sf_pro_display,
+        letterSpacing: letter_spacing_05,
+        height: size_40 / size_34,
+        fontSize: size_34,
+        fontWeight: FontWeight.w700,
         color: color,
       );
 
   static TextStyle h2({
-    Color color = AppColors.text_primary,
+    Color color = AppColors.white_b,
   }) =>
       TextStyle(
-        fontFamily: AppFonts.platformFontFamilyDisplay,
+        fontFamily: AppFonts.sf_pro_display,
         letterSpacing: letter_spacing_0_positive,
-        height: size_30 / size_24,
-        fontSize: size_24,
-        fontWeight: AppFonts.platformSemiboldOrMedium,
+        height: size_33 / size_28,
+        fontSize: size_28,
+        fontWeight: FontWeight.w700,
         color: color,
       );
 
   static TextStyle h3({
-    Color color = AppColors.text_primary,
+    Color color = AppColors.white_a,
   }) =>
       TextStyle(
-        fontFamily: AppFonts.platformFontFamilyDisplay,
+        fontFamily: AppFonts.sf_pro_display,
         letterSpacing: letter_spacing_0_positive,
-        height: size_26 / size_20,
+        height: size_27 / size_23,
+        fontSize: size_23,
+        fontWeight: FontWeight.w700,
+        color: color,
+      );
+
+  static TextStyle h4({
+    Color color = AppColors.for_body_text,
+  }) =>
+      TextStyle(
+        fontFamily: AppFonts.sf_pro_display,
+        letterSpacing: letter_spacing_0_positive,
+        height: size_23 / size_20,
         fontSize: size_20,
-        fontWeight: AppFonts.platformSemiboldOrMedium,
+        fontWeight: FontWeight.w400,
         color: color,
       );
 
-  static TextStyle subtitle1({
-    Color color = AppColors.text_primary,
-    double height = size_24 / size_16,
+  static TextStyle inter_500({
+    Color color = AppColors.mint,
   }) =>
       TextStyle(
-        fontFamily: AppFonts.platformFontFamilyDisplay,
+        fontFamily: AppFonts.sf_compact_display,
         letterSpacing: letter_spacing_0_positive,
-        height: height,
-        fontSize: size_16,
-        fontWeight: AppFonts.platformSemiboldOrMedium,
+        height: size_14 / size_12,
+        fontSize: size_12,
+        fontWeight: FontWeight.w500,
         color: color,
       );
 
-  static TextStyle subtitle4({
+  static TextStyle inter_400({
+    Color color = AppColors.mint,
+  }) =>
+      TextStyle(
+        fontFamily: AppFonts.sf_compact_display,
+        letterSpacing: letter_spacing_0_positive,
+        height: size_18 / size_15,
+        fontSize: size_15,
+        fontWeight: FontWeight.w400,
+        color: color,
+      );
+
+  static TextStyle m_numb({
+    Color color = AppColors.white_b,
+  }) =>
+      TextStyle(
+        fontFamily: AppFonts.sf_pro_display,
+        letterSpacing: letter_spacing_0_positive,
+        height: size_15 / size_13,
+        fontSize: size_13,
+        fontWeight: FontWeight.w600,
+        color: color,
+      );
+
+  static TextStyle body({
     Color color = AppColors.text_primary,
   }) =>
       TextStyle(
-        fontFamily: AppFonts.platformFontFamilyDisplay,
+        fontFamily: AppFonts.sf_compact_display,
         letterSpacing: letter_spacing_0_positive,
-        height: size_14 / size_10,
-        fontSize: size_10,
-        fontWeight: AppFonts.platformSemiboldOrMedium,
+        height: size_20 / size_17,
+        fontSize: size_17,
+        fontWeight: FontWeight.w400,
+        color: color,
+      );
+
+  static TextStyle body_mediun({
+    Color color = AppColors.text_primary,
+  }) =>
+      TextStyle(
+        fontFamily: AppFonts.sf_pro_display,
+        letterSpacing: letter_spacing_0_positive,
+        height: size_17 / size_15,
+        fontSize: size_15,
+        fontWeight: FontWeight.w400,
+        color: color,
+      );
+
+  static TextStyle body_mediun_SB({
+    Color color = AppColors.text_primary,
+  }) =>
+      TextStyle(
+        fontFamily: AppFonts.sf_pro_display,
+        letterSpacing: letter_spacing_0_positive,
+        height: size_18 / size_15,
+        fontSize: size_15,
+        fontWeight: FontWeight.w600,
+        color: color,
+      );
+
+  static TextStyle body_small({
+    Color color = AppColors.text_primary,
+  }) =>
+      TextStyle(
+        fontFamily: AppFonts.sf_pro_display,
+        letterSpacing: letter_spacing_0_positive,
+        height: size_14 / size_12,
+        fontSize: size_12,
+        fontWeight: FontWeight.w400,
+        color: color,
+      );
+
+  static TextStyle body_small_medium({
+    Color color = AppColors.text_primary,
+  }) =>
+      TextStyle(
+        fontFamily: AppFonts.sf_pro_display,
+        letterSpacing: letter_spacing_0_positive,
+        height: size_14 / size_12,
+        fontSize: size_12,
+        fontWeight: FontWeight.w500,
         color: color,
       );
 }

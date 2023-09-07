@@ -1,7 +1,7 @@
 name: astro_app
 description: A new Flutter project.
 publish_to: 'none'
-version: 1.0.0+1
+version: 1.0.0
 
 environment:
   sdk: '>=2.19.6 <3.0.0'
@@ -21,6 +21,12 @@ dependencies:
   #Calendar
   table_calendar: 3.0.9
 
+  #Layout
+  sliver_tools: 0.2.12
+
+  #Widgets
+  msh_checkbox: 2.0.1
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -35,3 +41,19 @@ flutter:
     - assets/icons/
     - assets/images/
     - assets/animations/
+
+  fonts:
+    - family: Inter
+      fonts:
+        - asset: assets/font/Inter/Inter-Bold-Italic.otf
+        - asset: assets/font/Inter/Inter-Bold.otf
+        - asset: assets/font/Inter/Inter-Italic.otf
+        - asset: assets/font/Inter/Inter-Regular.otf
+    - family: SF_Compact_Display
+      fonts:
+        - asset: assets/font/SF_Compact_Display/SF-Compact-Display-Medium.otf
+        - asset: assets/font/SF_Compact_Display/SF-Compact-Display-Thin.otf
+    - family: SF_Pro_Display
+      fonts:
+        - asset: assets/font/SF_Pro_Display/SF-Pro-Display-Regular.otf
+        - asset: assets/font/SF_Pro_Display/SF-Pro-Display-Semibold.otf

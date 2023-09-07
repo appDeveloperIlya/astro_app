@@ -24,7 +24,7 @@ class LayoutWrapper extends StatelessWidget {
     return Scaffold(
       resizeToAvoidBottomInset: resizeToAvoidBottomInset,
       backgroundColor: backgroundColor,
-      body: Container(
+      body: DecoratedBox(
         decoration: const BoxDecoration(
           gradient: AppColors.main_bg,
         ),
