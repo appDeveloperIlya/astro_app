@@ -22,7 +22,7 @@ class Routes {
       GetPage(
         name: Routes.app,
         page: () => const App(),
-        transition: Transition.noTransition,
+        transition: Transition.leftToRight,
       ),
     ];
   }

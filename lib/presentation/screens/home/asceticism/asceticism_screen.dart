@@ -24,7 +24,6 @@ class AsceticismScreen extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 16),
                 child: CustomScrollView(
-                  shrinkWrap: true,
                   slivers: [
                     SliverPinnedHeader(
                       child: Column(
@@ -76,13 +75,6 @@ class AsceticismScreen extends StatelessWidget {
                                     defaultBuilder: ctr.getCalendarDays,
                                     outsideBuilder: ctr.getCalendarDays,
                                     todayBuilder: ctr.getCalendarToday,
-                                  ),
-                                  headerStyle: HeaderStyle(
-                                    formatButtonVisible: false,
-                                    formatButtonShowsNext: false,
-                                    leftChevronVisible: false,
-                                    rightChevronVisible: false,
-                                    headerPadding: const EdgeInsets.symmetric(horizontal: AppDimens.margin_16),
                                   ),
                                 ),
                               ),

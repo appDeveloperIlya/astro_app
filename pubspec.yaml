@@ -15,6 +15,9 @@ dependencies:
   #GetX
   get: 4.6.5
 
+  #Shared Pref
+  shared_preferences: 2.2.1
+
   #SVG
   flutter_svg: 2.0.7
 
@@ -26,6 +29,9 @@ dependencies:
 
   #Widgets
   msh_checkbox: 2.0.1
+
+  #Prallax
+  parallax_sensors_bg: 1.0.1
 
 dev_dependencies:
   flutter_test:
@@ -57,3 +63,7 @@ flutter:
       fonts:
         - asset: assets/font/SF_Pro_Display/SF-Pro-Display-Regular.otf
         - asset: assets/font/SF_Pro_Display/SF-Pro-Display-Semibold.otf
+    - family: SF_Pro_Rounded
+      fonts:
+        - asset: assets/font/SF_Pro_Rounded/SF-Pro-Rounded-Regular.ttf
+

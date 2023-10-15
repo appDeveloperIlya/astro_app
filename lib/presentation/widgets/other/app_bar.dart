@@ -19,53 +19,56 @@ class AppBarWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      children: [
-        if (showInfoBtn)
-          Row(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              title,
-              SizedBox(width: Get.size.width10()),
-              GestureDetector(
-                onTap: handleInfoBtn,
-                child: AppImages.getAssetVectorImage(
-                  AppImages.ic_info,
-                  width: AppDimens.icon_24,
+    return Padding(
+      padding: const EdgeInsets.only(top: AppDimens.margin_10),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          if (showInfoBtn)
+            Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                title,
+                SizedBox(width: Get.size.width10()),
+                GestureDetector(
+                  onTap: handleInfoBtn,
+                  child: AppImages.getAssetVectorImage(
+                    AppImages.ic_info,
+                    width: AppDimens.icon_24,
+                  ),
                 ),
-              ),
-            ],
-          ),
-        if (!showInfoBtn) title,
-        if (showAddBtn)
-          Row(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              GestureDetector(
-                onTap: handleAddBtn,
-                child: AppImages.getAssetVectorImage(
-                  AppImages.ic_add,
-                  width: AppDimens.icon_24,
-                ),
-              ),
-              SizedBox(width: Get.size.width10()),
-              GestureDetector(
-                child: AppImages.getAssetVectorImage(
-                  AppImages.ic_menu_dots,
-                  width: AppDimens.icon_36,
-                ),
-              ),
-            ],
-          ),
-        if (!showAddBtn)
-          GestureDetector(
-            child: AppImages.getAssetVectorImage(
-              AppImages.ic_menu_dots,
-              width: AppDimens.icon_36,
+              ],
             ),
-          ),
-      ],
+          if (!showInfoBtn) title,
+          if (showAddBtn)
+            Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                GestureDetector(
+                  onTap: handleAddBtn,
+                  child: AppImages.getAssetVectorImage(
+                    AppImages.ic_add,
+                    width: AppDimens.icon_24,
+                  ),
+                ),
+                SizedBox(width: Get.size.width10()),
+                GestureDetector(
+                  child: AppImages.getAssetVectorImage(
+                    AppImages.ic_menu_dots,
+                    width: AppDimens.icon_36,
+                  ),
+                ),
+              ],
+            ),
+          if (!showAddBtn)
+            GestureDetector(
+              child: AppImages.getAssetVectorImage(
+                AppImages.ic_menu_dots,
+                width: AppDimens.icon_36,
+              ),
+            ),
+        ],
+      ),
     );
   }
 }

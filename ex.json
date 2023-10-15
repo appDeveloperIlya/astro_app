@@ -1,0 +1,158 @@
+{
+  "askesa1_id": {
+    "weeks": 4,
+    "title": "",
+    "id": "1111111",
+    "start_from": "01.01.2023",
+    "end_to": "07.01.2023",
+    "crontab": "0 8 */2 * *",
+    "status": [
+      {"date": "01.01.2023",
+      "status": "done"},
+      {"date": "03.01.2023",
+      "status": "in progress"},
+      {"date": "04.01.2023",
+      "status": "wait"}
+    ]
+  }
+
+
+    {
+      "date": "01.01.2023",
+      "id": "1111111",
+      "description": "Каждое утро вставать в 8:00",
+      "start_from": "01.01.2023",
+      "end_to": "07.01.2023",
+      "crontab": "0 8 */2 * *",
+      "status": "done"
+    },
+    {
+      "date": "02.01.2023",
+      "id": "1111111",
+      "description": "Каждое утро вставать в 8:00",
+      "start_from": "01.01.2023",
+      "end_to": "07.01.2023",
+      "crontab": "0 8 */2 * *",
+      "status": "done"
+    },
+    {
+      "date": "03.01.2023",
+      "id": "1111111",
+      "description": "Каждое утро вставать в 8:00",
+      "start_from": "01.01.2023",
+      "end_to": "07.01.2023",
+      "crontab": "0 8 */2 * *",
+      "status": "in progress"
+    },
+    {
+      "date": "04.01.2023",
+      "id": "1111111",
+      "description": "Каждое утро вставать в 8:00",
+      "start_from": "01.01.2023",
+      "end_to": "07.01.2023",
+      "crontab": "0 8 */2 * *",
+      "status": "wait"
+    },
+    {
+      "date": "05.01.2023",
+      "id": "1111111",
+      "description": "Каждое утро вставать в 8:00",
+      "start_from": "01.01.2023",
+      "end_to": "07.01.2023",
+      "crontab": "0 8 */2 * *",
+      "status": "wait"
+    },
+    {
+      "date": "06.01.2023",
+      "id": "1111111",
+      "description": "Каждое утро вставать в 8:00",
+      "start_from": "01.01.2023",
+      "end_to": "07.01.2023",
+      "crontab": "0 8 */2 * *",
+      "status": "wait"
+    },
+    {
+      "date": "07.01.2023",
+      "id": "1111111",
+      "description": "Каждое утро вставать в 8:00",
+      "start_from": "01.01.2023",
+      "end_to": "07.01.2023",
+      "crontab": "0 8 */2 * *",
+      "status": "wait"
+    }
+  ],
+  "askesa2_id": [
+    {
+      "date": "03.01.2023",
+      "id": "222222",
+      "description": "Делать зарядку",
+      "start_from": "03.01.2023",
+      "end_to": "10.01.2023",
+      "crontab": "0 8 * * *",
+      "status": "in progress"
+    },
+    {
+      "date": "04.01.2023",
+      "id": "222222",
+      "description": "Делать зарядку",
+      "start_from": "03.01.2023",
+      "end_to": "10.01.2023",
+      "crontab": "0 8 * * *",
+      "status": "wait"
+    },
+    {
+      "date": "05.01.2023",
+      "id": "222222",
+      "description": "Делать зарядку",
+      "start_from": "03.01.2023",
+      "end_to": "10.01.2023",
+      "crontab": "0 8 * * *",
+      "status": "wait"
+    },
+    {
+      "date": "06.01.2023",
+      "id": "222222",
+      "description": "Делать зарядку",
+      "start_from": "03.01.2023",
+      "end_to": "10.01.2023",
+      "crontab": "0 8 * * *",
+      "status": "wait"
+    },
+    {
+      "date": "07.01.2023",
+      "id": "222222",
+      "description": "Делать зарядку",
+      "start_from": "03.01.2023",
+      "end_to": "10.01.2023",
+      "crontab": "0 8 * * *",
+      "status": "wait"
+    },
+    {
+      "date": "08.01.2023",
+      "id": "222222",
+      "description": "Делать зарядку",
+      "start_from": "03.01.2023",
+      "end_to": "10.01.2023",
+      "crontab": "0 8 * * *",
+      "status": "wait"
+    },
+    {
+      "date": "09.01.2023",
+      "id": "222222",
+      "description": "Делать зарядку",
+      "start_from": "03.01.2023",
+      "end_to": "10.01.2023",
+      "crontab": "0 8 * * *",
+      "status": "wait"
+    },
+    {
+      "date": "010.01.2023",
+      "id": "222222",
+      "description": "Делать зарядку",
+      "start_from": "03.01.2023",
+      "end_to": "10.01.2023",
+      "crontab": "0 8 * * *",
+      "status": "wait"
+    }
+  ]
+}

@@ -23,7 +23,7 @@ class AstroApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       getPages: Routes.getRouterPages(),
-      initialRoute: Routes.app,
+      initialRoute: Routes.onboarding,
       initialBinding: AppBindings(),
     );
   }

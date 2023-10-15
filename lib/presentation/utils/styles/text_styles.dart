@@ -7,6 +7,7 @@ class AppFonts {
   static const inter = 'Inter';
   static const sf_compact_display = 'SFComactDisplay';
   static const sf_pro_display = 'SFProDisplay';
+  static const sf_pro_rounded = 'SFProRounded';
 
   ///endregion
 }
@@ -23,6 +24,7 @@ class AppTextStyles {
   static const size_16 = 16.0;
   static const size_17 = 17.0;
   static const size_18 = 18.0;
+  static const size_19 = 19.0;
   static const size_20 = 20.0;
   static const size_22 = 22.0;
   static const size_23 = 23.0;
@@ -50,6 +52,30 @@ class AppTextStyles {
   static const letter_spacing_02 = -0.2;
   static const letter_spacing_04 = -0.4;
   static const letter_spacing_05 = -0.5;
+
+  static TextStyle h_round_b({
+    Color color = AppColors.white_a,
+  }) =>
+      TextStyle(
+        fontFamily: AppFonts.sf_pro_rounded,
+        letterSpacing: letter_spacing_05,
+        height: size_33 / size_28,
+        fontSize: size_28,
+        fontWeight: FontWeight.w700,
+        color: color,
+      );
+
+  static TextStyle l_numb({
+    Color color = AppColors.white_a,
+  }) =>
+      TextStyle(
+        fontFamily: AppFonts.sf_pro_display,
+        letterSpacing: letter_spacing_0_positive,
+        height: size_19 / size_16,
+        fontSize: size_16,
+        fontWeight: FontWeight.w600,
+        color: color,
+      );
 
   static TextStyle h1({
     Color color = AppColors.white_a,
@@ -99,6 +125,18 @@ class AppTextStyles {
         color: color,
       );
 
+  static TextStyle h4_m({
+    Color color = AppColors.tab_bar_bg,
+  }) =>
+      TextStyle(
+        fontFamily: AppFonts.sf_pro_display,
+        letterSpacing: letter_spacing_0_positive,
+        height: size_23 / size_20,
+        fontSize: size_20,
+        fontWeight: FontWeight.w500,
+        color: color,
+      );
+
   static TextStyle inter_500({
     Color color = AppColors.mint,
   }) =>
@@ -113,12 +151,13 @@ class AppTextStyles {
 
   static TextStyle inter_400({
     Color color = AppColors.mint,
+    double fontSize = size_15,
   }) =>
       TextStyle(
         fontFamily: AppFonts.sf_compact_display,
         letterSpacing: letter_spacing_0_positive,
-        height: size_18 / size_15,
-        fontSize: size_15,
+        height: size_18 / fontSize,
+        fontSize: fontSize,
         fontWeight: FontWeight.w400,
         color: color,
       );

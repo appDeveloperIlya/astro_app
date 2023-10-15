@@ -11,7 +11,10 @@ class RU {
 
     //AppBar
     'app_bar_asceticism': 'Аскезы',
-    'app_bar_afirmation_info': 'Следующая аффирмация будет завтра',
+    'app_bar_afirmation_info': 'Следующая \nаффирмация будет \nзавтра',
     'app_bar_moon_state': 'Растущая',
+
+    //Calendar
+    'calendar_activities_btn': 'по активностям',
   };
 }

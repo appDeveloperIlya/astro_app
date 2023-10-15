@@ -3,6 +3,10 @@ import 'package:flutter/material.dart';
 class AppColors {
   AppColors._();
 
+  //bg
+  static const violetBG = Color.fromRGBO(134, 128, 203, 1);
+  static const transparent = Color.fromRGBO(250, 250, 250, 0);
+
   static const text_primary = Color.fromRGBO(243, 237, 255, 1);
   static const tab_bar_bg = Color.fromRGBO(36, 42, 56, 0.9);
   static const for_body_text = Color.fromRGBO(11, 13, 85, 1);
